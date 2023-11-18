@@ -1,6 +1,7 @@
 import math
 import random
 
+
 def test_greeting():
     """
     Напишите программу, которая выводит на экран приветствие.
@@ -44,7 +45,8 @@ def test_circle():
     # TODO сосчитайте длину окружности
     length = 2 * math.pi * r
     assert length == 144.51326206513048
-    print(area,length)
+    print(area, length)
+
 
 def test_random_list():
     """
@@ -63,6 +65,7 @@ def test_random_list():
     i = random.randint(0, 100)
     j = random.randint(0, 100)
     l = [a, b, c, d, e, f, g, h, i, j]
+    l.sort()
     assert len(l) == 10
     assert l[0] < l[-1]
 
